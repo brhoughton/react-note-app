@@ -1,5 +1,3 @@
-// 28:26, https://youtu.be/j898RGRw0b4?si=WHrnt6nFNXR1UCGb
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useMemo } from "react";
 import { Container } from "react-bootstrap";
@@ -55,6 +53,10 @@ function App() {
     });
   };
 
+  function addTag(tag: Tag) {
+    setTags((prev) => [...prev, tag]);
+  }
+
   return (
     <Container className="my-4">
       <Routes>
@@ -64,7 +66,13 @@ function App() {
         />
         <Route
           path="/new"
-          element={<NewNote />}
+          element={
+            <NewNote
+              onSubmit={onCreateNote}
+              onAddTag={addTag}
+              availableTags={tags}
+            />
+          }
         />
         <Route path="/:id">
           <Route
