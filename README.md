@@ -4,7 +4,7 @@ App for writing and storing notes.
 
 ## Description
 
-This is a fully functioning CRUD note taking app. You have the ability to create, read, update, and edit notes. State and storage is handled locally.
+This is a fully functioning CRUD note taking app. State and storage is handled locally.
 
 ## Getting Started
 
