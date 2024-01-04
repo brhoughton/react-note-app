@@ -1,6 +1,6 @@
-# Project Title
+# React Note App
 
-App for writing notes.
+App for writing and storing notes.
 
 ## Description
 
